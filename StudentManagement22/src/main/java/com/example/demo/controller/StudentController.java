@@ -15,7 +15,7 @@ public class StudentController {
 	@Autowired
 	StudentService ss;
 
-	@PostMapping("addstudents")
+	@PostMapping("adds")
 	String addStudent(@RequestBody Student s) {
 
 		return ss.saveStudent(s);
